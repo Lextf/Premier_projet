@@ -1,0 +1,364 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+
+    a {
+        text-decoration: none;
+    }
+    // Header
+    header {
+        font-family: 'Lobster', cursive;
+        font-size: 3em;
+        color: black;
+
+        @media only screen and (max-width:376px) {
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    // desktop header
+        #header_container {
+            display: flex;
+            justify-content: space-between;
+
+            @media only screen and (max-width:376px) {
+                display: none;
+            }
+
+            #firsttitle {
+                padding-left: 2vh;
+            }
+
+            #navp2 {
+                width: 70%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 9vh;
+                    width: 80%;
+                    list-style: none;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.5em;
+                    font-weight: bold;
+
+                    a {
+                        color: black;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid black;
+                    }
+                }
+            }
+        }
+        // Mobile nav
+        #mobilemenu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            #mobiletitle {
+                @media only screen and (min-width: 376px) {
+                    display: none;
+                }
+            }
+
+            #navbarmobile {
+                width: 80%;
+                overflow: hidden;
+                background-color: transparent;
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                padding: 2vh;
+
+                @media only screen and (min-width:769px) {
+                    display: none;
+                }
+
+                @media only screen and (max-width:376px) {
+                    width: 30%;
+                }
+
+                #myLinks {
+                    display: none;
+
+                    a {
+                        color: black;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 12px;
+                        display: block;
+                        border-bottom: 1px solid black;
+                        margin-bottom: 15px;
+                        padding-left: 0;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+
+                .fa-bars {
+                    &:before {
+                        color: black;
+                        font-size: 1em;
+                    }
+                }
+            }
+
+        }
+    }
+    // Ferme section
+    #Ferme {
+        padding: 2vh;
+
+        #sectiontitle {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: lighter;
+        }
+
+        #subtitletext {
+            width: 100%;
+            font-size: 2em;
+            font-weight: lighter;
+            font-style: italic;
+            @media only screen and (max-width:376px){
+                font-size: 1em;
+            }
+        }
+
+        #animaux {
+            width: 100%;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+
+    #exemples {
+        background-color: #334f2b;
+        color: white;
+        padding: 2vh;
+    }
+    // Fin de ferme section
+    // Slides
+    #animauxsection {
+        #animaux-container {
+            padding: 5vh;
+            #spécialisé {
+                width: 100%;
+                text-align: center;
+            }
+            .mySlides {
+                display: none;
+            }
+
+            /*slider*/
+            .slideshow-container {
+                width: 100%;
+                background-color: white;
+                position: relative;
+
+                img {
+                    position: relative;
+                    left: 18%;
+                    padding: 10vh;
+
+                    @media only screen and (max-width:768px) {
+                        left: 33%
+                    }
+
+                    @media only screen and (max-width:376px) {
+                       width: 70%;
+                       left : 18%;
+                       padding: 0;
+                    }
+                }
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: #807979ba;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+
+            /* The dots/bullets/indicators */
+
+            #alldots {
+                display: flex;
+                justify-content: center;
+
+                .dot {
+
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                .dot:hover {
+                    background-color: #717171;
+                }
+            }
+
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            #bottomtext {
+                font-weight: bolder;
+                padding-bottom: 10vh;
+
+                @media only screen and (max-width:376px) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+// Fin de slides
+//Footer
+#footer_container {
+    width: 100%;
+    background-color: #813126;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+    @media only screen and (max-width:376px) {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    // Desktop footer
+    h3 {
+        font-family: 'Lobster', cursive;
+        font-size: 2em;
+        font-weight: lighter;
+
+        @media only screen and (max-width:376px) {
+            text-align: center;
+        }
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+
+        @media only screen and (max-width:376px) {
+            text-align: center;
+        }
+
+        .fa-facebook {
+            font-size: 3em;
+
+            :hover {
+                color: #3b5998;
+            }
+        }
+    }
+}
+
+
+
+// Mobile footer
+#footermobile {
+    background-color: #813126;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+    @media only screen and (min-width:377px) {
+        display: none;
+    }
+
+    .collapsible {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        font-family: 'Lobster', cursive;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 2vh;
+    }
+
+    .content {
+        width: 100%;
+        display: none;
+
+        p {
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.8em;
+            text-align: center;
+
+            .fa-facebook {
+                font-size: 2em;
+                color: white;
+            }
+
+            :hover {
+                color: #3b5998;
+            }
+        }
+        // Fin de footer
+    }
+}

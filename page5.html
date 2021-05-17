@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="page5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af2789c1ce.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>L'îlot Zanimo-Tarifs</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--desktop nav-->
+        <div id="header_container">
+            <h1 id="firsttitle">L'îlot Zanimo</h1>
+            <nav id="navp2">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="page2.html">La ferme</a></li>
+                    <li><a href="page3.html">Ferme itinérante</a></li>
+                    <li><a href="page4.html">Activités</a></li>
+                    <li><a href="page5.html">Tarifs</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--mobile nav-->
+        <div id="mobilemenu">
+            <h2 id="mobiletitle">L'îlot Zanimo</h2>
+            <nav id="navbarmobile">
+                <div id="myLinks">
+                    <a href="index.html">Accueil</a>
+                    <a href="page2.html">La ferme</a>
+                    <a href="page3.html">Ferme itinérante</a>
+                    <a href="page4.html">Activités</a>
+                    <a href="page5.html">Tarifs</a>
+                </div>
+                <!-- Menu burger -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+        <!--fin de header-->
+    </header>
+    <!--tarifs-->
+    <section id="tarifs">
+        <div id="lestarifs">
+            <h2 id="tarifstitle">TARIFS</h2>
+            <div id="visite">
+                <h3 id="visitelibre">VISITE LIBRE :</h3>
+                <p>ADULTE / 5€ <br />
+                    ENFANT/ 3€<br />
+                    1 Sachet de grain offert par Famille!</p>
+            </div>
+            <div id="baptème">
+                <h3 id="poney">BAPTEME A PONEY :</h3>
+                <p>10min / 5€</p>
+            </div>
+            <div id="balade">
+                <h3 id="baladeponey">BALADE A PONEY :</h3>
+                <p>30min / 10€</p>
+            </div>
+            <div id="devis">
+                <p id="formule">ACCUEIL DE GROUPE / SUR DEVIS par mail ou téléphone
+                    Formule Anniversaire: Visite Guidée + balade à poney : 15€/enfants.</p>
+            </div>
+        </div>
+        <div id="lapinimage">
+            <img src="image/lapins2.jpg">
+        </div>
+    </section>
+    <!--fin de tarifs-->
+    <!--footer-->
+    <footer>
+        <!--desktop footer-->
+        <div id="footer_container">
+            <div id="horaires">
+                <h3>Horaires</h3>
+                <p>D'AVRIL A OCTOBRE 2021 <br /><br /> VACANCES SCOLAIRES <br /> 14H00-18H00 <br /> JUILLET-AOUT <br />
+                    11H00-19H00 <br /><br /> Fermé le dimanche</p>
+            </div>
+            <div id="adresse">
+                <h3>Adresse</h3>
+                <p>195 route des quatres moulins<br />85300 Sallertaine, France <br /> lilotzanimo@bbox.fr <br /><br />
+                    P : 06.62.25.70.26 <br /><br /> <a
+                        href="https://www.facebook.com/L%C3%AElot-Zanimo-Ferme-dAnimation-P%C3%A9dagogique-189206267835570"
+                        target="_blank"><i class="fab fa-facebook"></i></a></p>
+            </div>
+            <div id="trouver">
+                <h3>Nous trouver</h3>
+                <div id="map_container">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="230" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=l'%C3%AElot%20zanimo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 250px;
+                                    width: 350px;
+                                }
+                            </style>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 250px;
+                                    width: 350px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile footer-->
+        <div id="footermobile">
+            <div id="horairesmobile">
+                <button class="collapsible" onclick="deroulant()">Horaires <i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <p>D'AVRIL A OCTOBRE 2021 <br /><br /> VACANCES SCOLAIRES <br /> 14H00-18H00 <br /> JUILLET-AOUT
+                        <br /> 11H00-19H00 <br /><br /> Fermé le dimanche</p>
+                </div>
+            </div>
+            <div id="adressemobile">
+                <button class="collapsible" onclick="deroulant()">Adresse <i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <p>195 route des quatres moulins<br />85300 Sallertaine, France <br /> lilotzanimo@bbox.fr
+                        <br /><br /> P : 06.62.25.70.26 <br /><br /> <a
+                            href="https://www.facebook.com/L%C3%AElot-Zanimo-Ferme-dAnimation-P%C3%A9dagogique-189206267835570"
+                            target="_blank"><i class="fab fa-facebook"></i></a></p>
+                </div>
+            </div>
+            <div id="trouvermobile">
+                <button class="collapsible" onclick="deroulant()">Nous trouver <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height="230" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=l'%C3%AElot%20zanimo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 250px;
+                                width: 350px;
+                            }
+                        </style>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 250px;
+                                width: 350px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin de footer-->
+    </footer>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

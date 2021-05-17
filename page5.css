@@ -1,0 +1,301 @@
+body a {
+  text-decoration: none;
+}
+
+body header {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  color: black;
+}
+
+@media only screen and (max-width: 376px) {
+  body header {
+    font-size: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+body header #header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 376px) {
+  body header #header_container {
+    display: none;
+  }
+}
+
+body header #header_container #firsttitle {
+  padding-left: 2vh;
+}
+
+body header #header_container #navp2 {
+  width: 70%;
+}
+
+body header #header_container #navp2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 9vh;
+  width: 80%;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+body header #header_container #navp2 ul a {
+  color: black;
+}
+
+body header #header_container #navp2 ul a:hover {
+  border-bottom: 3px solid black;
+}
+
+body header #mobilemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 376px) {
+  body header #mobilemenu #mobiletitle {
+    display: none;
+  }
+}
+
+body header #mobilemenu #navbarmobile {
+  width: 80%;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2vh;
+}
+
+@media only screen and (min-width: 769px) {
+  body header #mobilemenu #navbarmobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  body header #mobilemenu #navbarmobile {
+    width: 30%;
+  }
+}
+
+body header #mobilemenu #navbarmobile #myLinks {
+  display: none;
+}
+
+body header #mobilemenu #navbarmobile #myLinks a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  padding-left: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body header #mobilemenu #navbarmobile .fa-bars:before {
+  color: black;
+  font-size: 1em;
+}
+
+body #tarifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #tarifs #lestarifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body #tarifs #lestarifs #tarifstitle {
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+body #tarifs #lestarifs #formule {
+  font-weight: bold;
+}
+
+body #tarifs #lapinimage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 376px) {
+  body #tarifs #lapinimage {
+    display: none;
+  }
+}
+
+body #tarifs #lapinimage img {
+  height: 600px;
+}
+
+body #footer_container {
+  width: 100%;
+  background-color: #813126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+@media only screen and (max-width: 376px) {
+  body #footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+}
+
+body #footer_container h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 376px) {
+  body #footer_container h3 {
+    text-align: center;
+  }
+}
+
+body #footer_container p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 376px) {
+  body #footer_container p {
+    text-align: center;
+  }
+}
+
+body #footer_container p .fa-facebook {
+  font-size: 3em;
+}
+
+body #footer_container p .fa-facebook :hover {
+  color: #3b5998;
+}
+
+body #footermobile {
+  background-color: #813126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: white;
+}
+
+@media only screen and (min-width: 377px) {
+  body #footermobile {
+    display: none;
+  }
+}
+
+body #footermobile .collapsible {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 2vh;
+}
+
+body #footermobile .content {
+  width: 100%;
+  display: none;
+}
+
+body #footermobile .content p {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+body #footermobile .content p .fa-facebook {
+  font-size: 2em;
+  color: white;
+}
+
+body #footermobile .content p :hover {
+  color: #3b5998;
+}
+/*# sourceMappingURL=page5.css.map */

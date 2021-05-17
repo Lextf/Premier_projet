@@ -1,0 +1,550 @@
+html body {
+  color: white;
+}
+
+html body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+html body a {
+  text-decoration: none;
+  color: white;
+}
+
+html body button:hover {
+  opacity: 0.6;
+  -webkit-transition: 1;
+  transition: 1;
+}
+
+html body .fa-facebook:hover {
+  color: #4267B2;
+}
+
+html body #header_image {
+  background-image: url(image/landingpage.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image {
+    height: 500px;
+  }
+}
+
+html body #header_image #toptext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body #header_image #toptext #Logosite {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image #toptext #Logosite {
+    width: 70%;
+  }
+}
+
+html body #header_image #toptext #Logosite #Logo {
+  font-family: 'Lobster', cursive;
+  font-size: 6em;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image #toptext #Logosite #Logo {
+    font-size: 2em;
+    width: 100%;
+  }
+}
+
+html body #header_image #toptext #Logosite #underlogotext {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin-top: -0.8vh;
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image #toptext #Logosite #underlogotext {
+    font-size: 0.3em;
+    padding-left: 60px;
+    margin-top: -0.2vh;
+  }
+}
+
+html body #header_image #toptext #navigation {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image #toptext #navigation {
+    display: none;
+  }
+}
+
+html body #header_image #toptext #navigation ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 4vh;
+}
+
+html body #header_image #toptext #navigation ul li:hover {
+  border-bottom: 5px solid white;
+  margin-bottom: -5px;
+}
+
+html body #header_image #toptext #navbarmobile {
+  width: 80%;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2vh;
+}
+
+@media only screen and (min-width: 769px) {
+  html body #header_image #toptext #navbarmobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image #toptext #navbarmobile {
+    width: 30%;
+  }
+}
+
+html body #header_image #toptext #navbarmobile #myLinks {
+  display: none;
+}
+
+html body #header_image #toptext #navbarmobile #myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-left: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html body #header_image #toptext #navbarmobile .fa-bars:before {
+  color: white;
+  font-size: 2em;
+}
+
+html body #header_image #reouverture {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: auto;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
+  padding-left: 2vh;
+  padding-top: 10vh;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #header_image #reouverture {
+    font-size: 1em;
+    width: 40%;
+    text-align: center;
+    padding-top: 1vh;
+  }
+}
+
+html body #boutons #boutons_container {
+  background-color: #9b8f7f;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+html body #boutons #boutons_container #carteferme {
+  width: 30%;
+  background-image: url(image/Lapins.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteferme {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+html body #boutons #boutons_container #carteferme #boutonferme {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteferme #boutonferme {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 1vh;
+  }
+}
+
+html body #boutons #boutons_container #carteferme #boutonferme button {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  margin: 1vh;
+  padding: 2vh;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteferme #boutonferme button {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3vh;
+    width: 40%;
+  }
+}
+
+html body #boutons #boutons_container #carteferme #boutonferme a {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteferme #boutonferme a {
+    font-size: 1.5em;
+  }
+}
+
+html body #boutons #boutons_container #carteactivite {
+  width: 30%;
+  background-image: url(image/fillette.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteactivite {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+html body #boutons #boutons_container #carteactivite #boutonactivite {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteactivite #boutonactivite {
+    padding-left: 1vh;
+  }
+}
+
+html body #boutons #boutons_container #carteactivite #boutonactivite button {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  margin: 1vh;
+  padding: 2vh;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteactivite #boutonactivite button {
+    margin: 0;
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+    width: 40%;
+  }
+}
+
+html body #boutons #boutons_container #carteactivite #boutonactivite a {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #carteactivite #boutonactivite a {
+    font-size: 2.1em;
+  }
+}
+
+html body #boutons #boutons_container #cartetarifs {
+  width: 30%;
+  background-color: #334f2b;
+  height: 800px;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #cartetarifs {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+html body #boutons #boutons_container #cartetarifs #boutontarifs {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #boutons #boutons_container #cartetarifs #boutontarifs #p1 {
+  font-family: 'Open Sans', sans-serif;
+  width: 80%;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #cartetarifs #boutontarifs #p1 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+
+html body #boutons #boutons_container #cartetarifs #boutontarifs #p2 {
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #cartetarifs #boutontarifs #p2 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+
+html body #boutons #boutons_container #cartetarifs #boutontarifs button {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  margin: 1vh;
+  margin-top: 17vh;
+  padding: 2vh;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #boutons #boutons_container #cartetarifs #boutontarifs button {
+    width: 40%;
+    margin-top: 2vh;
+    padding: 0vh;
+  }
+}
+
+html body #boutons #boutons_container #cartetarifs #boutontarifs button a {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #youtube_container iframe {
+    height: 300px;
+  }
+}
+
+html body #footer_container {
+  width: 100%;
+  background-color: #813126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+}
+
+html body #footer_container h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #footer_container h3 {
+    text-align: center;
+  }
+}
+
+html body #footer_container p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 376px) {
+  html body #footer_container p {
+    text-align: center;
+  }
+}
+
+html body #footer_container p .fa-facebook {
+  font-size: 3em;
+}
+
+html body #footer_container p .fa-facebook :hover {
+  color: #3b5998;
+}
+
+html body #footermobile {
+  background-color: #813126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 377px) {
+  html body #footermobile {
+    display: none;
+  }
+}
+
+html body #footermobile .collapsible {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 2vh;
+}
+
+html body #footermobile .content {
+  width: 100%;
+  display: none;
+}
+
+html body #footermobile .content p {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+html body #footermobile .content p .fa-facebook {
+  font-size: 2em;
+}
+
+html body #footermobile .content p :hover {
+  color: #3b5998;
+}
+/*# sourceMappingURL=style.css.map */

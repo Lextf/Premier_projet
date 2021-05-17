@@ -1,0 +1,425 @@
+@charset "UTF-8";
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body header {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  color: black;
+}
+
+@media only screen and (max-width: 376px) {
+  body header {
+    font-size: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+body header #header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 376px) {
+  body header #header_container {
+    display: none;
+  }
+}
+
+body header #header_container #firsttitle {
+  padding-left: 2vh;
+}
+
+body header #header_container #navp2 {
+  width: 70%;
+}
+
+body header #header_container #navp2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 9vh;
+  width: 80%;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+body header #header_container #navp2 ul a {
+  color: black;
+}
+
+body header #header_container #navp2 ul a:hover {
+  border-bottom: 3px solid black;
+}
+
+body header #mobilemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 376px) {
+  body header #mobilemenu #mobiletitle {
+    display: none;
+  }
+}
+
+body header #mobilemenu #navbarmobile {
+  width: 80%;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2vh;
+}
+
+@media only screen and (min-width: 769px) {
+  body header #mobilemenu #navbarmobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  body header #mobilemenu #navbarmobile {
+    width: 30%;
+  }
+}
+
+body header #mobilemenu #navbarmobile #myLinks {
+  display: none;
+}
+
+body header #mobilemenu #navbarmobile #myLinks a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  padding-left: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body header #mobilemenu #navbarmobile .fa-bars:before {
+  color: black;
+  font-size: 1em;
+}
+
+body #Ferme {
+  padding: 2vh;
+}
+
+body #Ferme #sectiontitle {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+body #Ferme #subtitletext {
+  width: 100%;
+  font-size: 2em;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 376px) {
+  body #Ferme #subtitletext {
+    font-size: 1em;
+  }
+}
+
+body #Ferme #animaux {
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+body #exemples {
+  background-color: #334f2b;
+  color: white;
+  padding: 2vh;
+}
+
+body #animauxsection #animaux-container {
+  padding: 5vh;
+  /*slider*/
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+body #animauxsection #animaux-container #spécialisé {
+  width: 100%;
+  text-align: center;
+}
+
+body #animauxsection #animaux-container .mySlides {
+  display: none;
+}
+
+body #animauxsection #animaux-container .slideshow-container {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+body #animauxsection #animaux-container .slideshow-container img {
+  position: relative;
+  left: 18%;
+  padding: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+  body #animauxsection #animaux-container .slideshow-container img {
+    left: 33%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  body #animauxsection #animaux-container .slideshow-container img {
+    width: 70%;
+    left: 18%;
+    padding: 0;
+  }
+}
+
+body #animauxsection #animaux-container .prev,
+body #animauxsection #animaux-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #807979ba;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body #animauxsection #animaux-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+body #animauxsection #animaux-container .prev:hover,
+body #animauxsection #animaux-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body #animauxsection #animaux-container #alldots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #animauxsection #animaux-container #alldots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+body #animauxsection #animaux-container #alldots .dot:hover {
+  background-color: #717171;
+}
+
+body #animauxsection #animaux-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body #animauxsection #animaux-container #bottomtext {
+  font-weight: bolder;
+  padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 376px) {
+  body #animauxsection #animaux-container #bottomtext {
+    padding: 0;
+  }
+}
+
+#footer_container {
+  width: 100%;
+  background-color: #813126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+@media only screen and (max-width: 376px) {
+  #footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+}
+
+#footer_container h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 376px) {
+  #footer_container h3 {
+    text-align: center;
+  }
+}
+
+#footer_container p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 376px) {
+  #footer_container p {
+    text-align: center;
+  }
+}
+
+#footer_container p .fa-facebook {
+  font-size: 3em;
+}
+
+#footer_container p .fa-facebook :hover {
+  color: #3b5998;
+}
+
+#footermobile {
+  background-color: #813126;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: white;
+}
+
+@media only screen and (min-width: 377px) {
+  #footermobile {
+    display: none;
+  }
+}
+
+#footermobile .collapsible {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 2vh;
+}
+
+#footermobile .content {
+  width: 100%;
+  display: none;
+}
+
+#footermobile .content p {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#footermobile .content p .fa-facebook {
+  font-size: 2em;
+  color: white;
+}
+
+#footermobile .content p :hover {
+  color: #3b5998;
+}
+/*# sourceMappingURL=page3.css.map */
